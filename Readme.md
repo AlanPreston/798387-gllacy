@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Цхай](https://up.htmlacademy.ru/htmlcss/22/user/798387).
-* Наставник: [Владислав Балабанович].
+* Наставник: [Владислав Балабанович].(https://htmlacademy.ru/profile/balabanovich)
 
 ---
 
