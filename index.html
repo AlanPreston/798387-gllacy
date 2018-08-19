@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+ <head>
+     <meta charset="utf-8">
+     <title>HTML Academy: Глейси</title>
+ </head>
+ <body>
+     <header class="main-header">
+         <nav class="main-navigation">
+             
+             <a class="main-header-logo">
+                 <img src="img/index-logo.svg" width="" height="" alt="Логотип интернет-магазина «Глейси»">
+             </a>
+             
+             <ul class="site-navigation">
+                 <li><a href="catalog.html"
+                        >Каталог</a></li>
+                 <li><a href="pay-deliver.html"
+                        >Доставка и оплата</a></li>
+                 <li><a href="about-us.html"
+                        >О Компании</a></li>
+             </ul>
+             
+             <ul class="user-navigation">
+                 <li class="search">Поиск</li>
+                 <li class="login-link">Вход</li>
+                 <li class="cart">Корзина</li>
+             </ul>
+             <p>С 10 до 20, ежедневно<br>
+             8 812 450-25-25</p>
+             
+         </nav>         
+     </header>
+     
+     <main class="container">
+         
+         <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
+         
+         <div class="main-slider">
+             <div class="slide"><img src="img/main_slider1.svg"></div>
+             <div class="slide"></div>
+             <div class="slide"></div>
+         </div>
+         
+         <section class="banner">
+             <h2 class="visually-hidden">Акции</h2>
+             <ul class="banner-list">
+                 <li class="banner-item">
+                     <b>Малинка даром!</b>
+                     <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                 </li>
+                 <li class="banner-item">
+                     <b>Шоколадки даром!</b>
+                     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                 </li>
+                    
+             </ul>
+         </section>
+         
+         <section class="showcase">
+             <h2 class="visually-hidden">Витрина</h2>
+             <ul class="showcase-list">
+                 <li class="showcase-item">
+                     <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                     <img src="img/showcase1.svg">
+                     <p>310₽<span class="showcase-piece">/кг</span></p>
+                 </li>
+                 <li class="showcase-item">
+                     <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                     <img src="img/showcase2.svg">
+                     <p>380₽<span class="showcase-piece">/кг</span></p>
+                 </li>
+                 <li class="showcase-item">
+                     <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                     <img src="img/showcase3.svg">
+                     <p>355₽<span class="showcase-piece">/кг</span></p>
+                 </li>
+                 <li class="showcase-item">
+                     <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+                     <img src="img/showcase4.svg">
+                     <p>415₽<span class="showcase-piece">/кг</span></p>
+                 </li>
+             </ul>
+         </section>
+         
+         <section class="features">
+             <h2 class="visually-hidden">Преимущества</h2>
+             <p>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных врменем технологий.</p>
+             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+             <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сорудничество.</p>
+             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>             
+         </section>
+         
+         <article class="blog-news">
+             <h1 class="visually-hidden">Блог интернет-магазина «Глейси»</h1>
+                 <p>Новое в нашем блоге</p>
+                 <b>10 способов сервировки фруктовых щербетов к столу</b>
+         </article>
+         
+         <sectiom class="mailing">
+             <h2 class="visually-hidden">Подписка на рассылку</h2>
+             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+             <input type="text" name="user-email">
+             <input type="submit" value="Отправить">
+         </sectiom>
+         
+         <!--тут будет карта-->
+         
+     </main>
+     <footer class="main-footer">
+         
+         <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Твиттер</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+            </ul>
+         </div>
+         
+         <div class="footer-about-us">
+            <ul>
+                <li><a href="suppliers.html">Для поставщиков</a></li>
+                <li><a href="fabric.html">О производстве</a></li>
+                <li><a href="legal-data.html">Наши документы</a></li>
+                <li><a href="eco-standart.html">Экологические стандарты</a></li>
+            </ul>
+         </div>
+         
+        <p class="footer-copyright">
+            <b>Сделано в </b> 
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+            © 2017
+        </p>
+         
+     </footer>
+ </body>
 </html>
