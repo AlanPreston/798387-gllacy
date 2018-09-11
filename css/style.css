@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  
+  background-color: #849d8f;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  
+  background-color: #db4e33;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #f28166;
+}
+
+.btn:active {
+  
+}
+
+
+.site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  
+  background-color: #849d8f;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  
+  background-color: #a1b4a9;
+}
+
+.site-navigation,
+.user-navigation,
+.sub-menu {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.banner a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+
+.banner h3 {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.banner-list {
+  list-style: none;
+}
+
+.banner-item-left {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  
+  background-color: #b8304b;
+  background-image: url("../img/mainpage/banner1.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.banner-item-right {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  
+  background-color: #452a1e;
+  background-image: url("../img/mainpage/banner2.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+
+h3 a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+h3 a:hover,
+h3 a:focus,
+h3 a:active {
+  color: #ffbc9e;
+}
+
+.catalog h3 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.catalog p {
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.catalog-piece {
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.features {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  
+  background-color: #ece0c6;
+  background-image: url("../img/mainpage/features.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.features b {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.blog-news {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  
+  background-color: #ffffff;
+  background-image: url("../img/mainpage/article.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.blog-news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.blog-news a:hover,
+.blog-news a:focus,
+.blog-news a:active {
+  color: #e84d37;
+}
+
+
+.mailing {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  
+  background-color: #f8f7f4;
+}
+
+.map-contacts {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  
+  background-color: #ffffff;
+}
+
+.map-adress,
+.map-phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.main-footer {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.main-footer a{
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-list,
+.footer-about-us ul{
+  list-style: none;
+}
+
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
+  color: #ffbc9e;
+}
+
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-social a:active {
+  
+}
+
+/*Страница каталога*/
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  background-color: #9db1a5;
+}
+
+.pagination-list a:active {
+  color: #333333;
+  background-color: #ffffff;
+}
+

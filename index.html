@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body style="background: black; color: white">
+<body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
@@ -23,38 +26,43 @@
             </ul>
         </li>
         <li>
-            <a href="pay-deliver.html">Доставка и оплата</a>
+            <a href="#">Доставка и оплата</a>
         </li>
         <li>
-            <a href="about-us.html">О Компании</a>
+            <a href="#">О Компании</a>
         </li>
       </ul>
 
       <ul class="user-navigation">
         <li class="search">
           <div class="search-icon">Поиск</div>
-          <div class="search-form"></div>
-          <!-- тут будет форма -->
-          
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input id="search" type="search" name="search" placeholder="Что ищем?">
+          </form>
         </li>
         <li class="login">
           <div class="login-link">Вход</div>
-          <div class="login-form"></div>
-          <!-- тут будет форма -->
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <input id="login" type="email" name="login" placeholder="Электронная почта">
+            <input id="password" type="password" name="password" placeholder="Пароль">
+            <input id="login-button" class="btn" type="submit" name="login-button" value="Войти">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
         </li>
         
         <li class="cart">
           <div class="cart-icon">Корзина</div>
           <table>
             <tr>
-              <td>x</td>
+              <td><button class="cart-delete" type="button">Удалить</button></td>
               <td>Пломбир с апельсиновым джемом</td>
               <td>1,5 кг х 200 руб.</td>
               <td>300 руб.</td>
             </tr>
             
             <tr>
-              <td>x</td>
+              <td><button class="cart-delete" type="button">Удалить</button></td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
               <td>1,5 кг х 300 руб.</td>
               <td>450 руб.</td>
@@ -64,7 +72,7 @@
               <td colspan="4">Итого: 750 руб.</td>
             </tr>
           </table>
-          <a>Оформить заказ</a>
+          <a href="#" class="btn">Оформить заказ</a>
         </li>
       </ul>
         
@@ -78,7 +86,7 @@
   <main class="container">
     <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
 
-    <div class="main-slider">
+    <div class="main-slider">                                                   <!--Слайдер-->
       <div class="slide"><img src="img/main_slider1.svg"></div>
       <div class="slide"></div>
       <div class="slide"></div>
@@ -88,16 +96,18 @@
       <h2 class="visually-hidden">Акции</h2>
         
       <ul class="banner-list">
-        <li class="banner-item bunner-item-left">
+        <li class="banner-item banner-item-left">
           <h3>Малинка даром!</h3>
           <!-- это может быть "льдом"? -->
           <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="btn" href="#">Хочу варенье!</a>
         </li>
           
-        <li class="banner-item bunner-item-right">
+        <li class="banner-item banner-item-right">
           <h3>Шоколадки даром!</h3>
           <!-- это может быть "льдом"? -->
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="btn" href="#">Хочу шоколадки!</a>
         </li>
       </ul>
     </section>
@@ -153,20 +163,20 @@
         
       <p class="features-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных врменем технологий.</p>
         
-      <p class="features-naturale">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      <p class="features-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         
       <p class="features-cow">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сорудничество.</p>
         
       <p class="features-temp">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
     </section>
     
-    <div class="cont-blog-mailing">
+    <div class="blog-mailing-container">
       <article class="blog-news">
         <h1 class="visually-hidden">Блог</h1> <!-- он в article -->
 
         <p>Новое в нашем блоге</p>
 
-        <b><a href="#">10 способов сервировки фруктовых щербетов к столу</a></b> <!-- лед? -->
+        <a href="#">10 способов сервировки фруктовых щербетов к столу</a> <!-- лед? -->
       </article>
 
       <section class="mailing">
@@ -176,7 +186,7 @@
 
         <form class="mailing-form" action="/">
           <input type="text" name="user-email">
-          <input type="submit" value="Отправить">
+          <input class="btn" type="submit" value="Отправить">
         </form>
       </section>
     </div>
@@ -190,13 +200,13 @@
       <p>Для заказов по телефону:
       <span class="map-phone">8 812 450-25-25</span><br>
       (с 10 до 20 ежедневно)</p>
-      <button>Форма обратной связи</button>
+      <button class="btn">Форма обратной связи</button>
     </div>
   </section>
     
   <footer class="main-footer">
     <div class="footer-social">
-      <ul>
+      <ul class="social-list">
         <li><a class="social-button" href="#">Твиттер</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -206,12 +216,12 @@
 
     <div class="footer-about-us">
       <ul>
-        <li><a href="suppliers.html">Для поставщиков</a></li>
-        <li><a href="fabric.html">О производстве</a></li>
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">О производстве</a></li>
       </ul>
       <ul>
-        <li><a href="legal-data.html">Наши документы</a></li>
-        <li><a href="eco-standart.html">Экологические стандарты</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
 
@@ -220,5 +230,17 @@
       <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> ©2017</p>
     </div>
   </footer>
+  
+  <section class="modal modal-login"> <!--Поп-ап-->
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="name" placeholder="Как Вас зовут?">
+        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        <textarea name="message">Напишите что-нибудь...</textarea>
+        <input type="submit" class="btn" value="Отправить">
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 </html>

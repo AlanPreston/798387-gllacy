@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
   
-<body style="background: black; color: white">
+<body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
@@ -24,46 +27,53 @@
             </ul>
         </li>
         <li>
-            <a href="pay-deliver.html">Доставка и оплата</a>
+            <a href="#">Доставка и оплата</a>
         </li>
         <li>
-            <a href="about-us.html">О Компании</a>
+            <a href="#">О Компании</a>
         </li>
       </ul>
 
       <ul class="user-navigation">
         <li class="search">
           <div class="search-icon">Поиск</div>
-          <div class="search-form"></div>
-          <!-- тут будет форма -->
-          
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input id="search" type="search" name="search" placeholder="Что ищем?">
+          </form>
         </li>
         <li class="login">
           <div class="login-link">Вход</div>
-          <div class="login-form"></div>
-          <!-- тут будет форма -->
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <input id="login" type="email" name="login" placeholder="Электронная почта">
+            <input id="password" type="password" name="password" placeholder="Пароль">
+            <input id="login-button" class="btn" type="submit" name="login-button" value="Войти">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
         </li>
         
         <li class="cart">
           <div class="cart-icon">Корзина</div>
           <table>
             <tr>
+              <td><button class="cart-delete" type="button">Удалить</button></td>
               <td>Пломбир с апельсиновым джемом</td>
               <td>1,5 кг х 200 руб.</td>
               <td>300 руб.</td>
             </tr>
             
             <tr>
+              <td><button class="cart-delete" type="button">Удалить</button></td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
               <td>1,5 кг х 300 руб.</td>
               <td>450 руб.</td>
             </tr>
             
             <tr>
-              <td colspan="3">Итого: 750 руб.</td>
+              <td colspan="4">Итого: 750 руб.</td>
             </tr>
           </table>
-          <a>Оформить заказ</a>
+          <a href="#" class="btn">Оформить заказ</a>
         </li>
       </ul>
         
@@ -73,6 +83,7 @@
       </div>
     </nav>
   </header>
+  
   
   <main class="container">
     <h1 class="page-title">Сливочное мороженое</h1>
@@ -85,9 +96,34 @@
     
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
-      
-      
+      <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
+        <select>
+          <option value="popular">по популярности</option>
+          <option value="lowest-first">сначала недорогие</option>
+          <option value="highest-first">сначала дорогие</option>
+          <option value="fat-content">по жирности</option>
+        </select>
+
+        <input type="range" min="0" max="660">
+
+        <div class="filter">
+          <input type="radio" name="fat" value="0">0%
+          <input type="radio" name="fat" value="<10">до 10%
+          <input type="radio" name="fat" value="<30">до 30%
+          <input type="radio" name="fat" value=">30">выше 30%
+        </div>
+
+        <div class="filter">
+          <input type="checkbox">шоколадные
+          <input type="checkbox">сахарные присыпки
+          <input type="checkbox">фрукты
+          <input type="checkbox">сиропы
+          <input type="checkbox">джемы
+        </div>
+
+        <input type="submit" value="Применить">
+        <!-- Здесь будет форма -->
+      </form>
     </section>
     
     <section class="catalog">
@@ -216,7 +252,7 @@
   
   <footer class="main-footer">
     <div class="footer-social">
-      <ul>
+      <ul class="social-list">
         <li><a class="social-button" href="#">Твиттер</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
