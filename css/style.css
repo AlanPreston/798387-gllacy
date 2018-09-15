@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -15,7 +15,6 @@ body {
 a {
   text-decoration: none;
 }
-
 
 .btn {
   font-size: 18px;
@@ -38,6 +37,14 @@ a {
   
 }
 
+.main-header {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+}
 
 .site-navigation {
   font-size: 16px;
@@ -53,6 +60,12 @@ a {
   color: #ffffff;
   
   background-color: #a1b4a9;
+  
+  margin-left: auto;
+}
+
+.header-contacts {
+  text-align: right;
 }
 
 .site-navigation,
@@ -75,7 +88,10 @@ a {
   background-color: #ffffff;
 }
 
-
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
 .banner h3 {
   font-size: 35px;
   line-height: 41px;
@@ -84,6 +100,15 @@ a {
 
 .banner-list {
   list-style: none;
+  
+  display: flex;
+  justify-content: flex-start;
+}
+
+.banner-item,
+.blog-news,
+.mailing {
+  width: 560px;
 }
 
 .banner-item-left {
@@ -120,6 +145,17 @@ h3 a:active {
   color: #ffbc9e;
 }
 
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  list-style: none;
+  width: 267px;
+}
+
 .catalog h3 {
   font-size: 16px;
   line-height: 22px;
@@ -153,6 +189,23 @@ h3 a:active {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+}
+
+.features-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-container p {
+  width: 540px;
+}
+
+.blog-mailing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .blog-news {
@@ -209,6 +262,13 @@ h3 a:active {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+  
+  width: 1146px;
+  height: 105px;
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer a{
@@ -216,6 +276,12 @@ h3 a:active {
   line-height: 18px;
   color: #ffffff;
   text-decoration: underline;
+}
+
+.footer-about-us {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-list,
@@ -247,9 +313,23 @@ h3 a:active {
   list-style: none;
   font-size: 14px;
   line-height: 16px;
+}
+
+.breadcrumbs a{
   color: #ffffff;
   text-decoration: underline;
 }
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
+.breadcrumbs-current {
+  text-decoration: none;
+}
+
 
 .pagination-list {
   list-style: none;
